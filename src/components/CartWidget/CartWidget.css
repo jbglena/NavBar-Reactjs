@@ -1,0 +1,23 @@
+.CartWidget{
+    width: 50px;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    margin: auto;
+    margin-right: 1em;
+    margin-top: 0.5em;
+}
+
+.CartWidget:hover{
+    animation: rotate 4s infinite linear;
+    font-size: 23px;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
