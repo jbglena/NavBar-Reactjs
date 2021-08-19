@@ -2,8 +2,11 @@ import React, { Component } from "react";
 import './App.css';
 
 //Components!
-import './components/NavBar.js'
-import NavBar from './components/NavBar.js';
+import './components/NavBar/NavBar';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemCount from "./components/ItemCount/ItemCount";
+
 
 class App extends Component{
   render(){
@@ -11,6 +14,10 @@ class App extends Component{
       <div className='App'>
         <NavBar />
 
+        <div className='ItemsContainer'>
+          <ItemListContainer />
+          <ItemCount initial={1}/>
+        </div>
       </div>
     )
   }
