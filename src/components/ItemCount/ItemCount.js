@@ -2,24 +2,23 @@ import React, { useState } from 'react'
 import { Button, Icon } from 'semantic-ui-react'
 import './ItemCount.css'
 
-const  ItemCount = ({initial=0, onAdd}) => {
+const  ItemCount = ({onAdd}) => {
 const [ stockItems=11, setStockItems] = useState(0)
 
 const handleIncrement = () =>{
     if (stockItems <=11){
     setStockItems(stockItems+1)
-} else {
-    return alert('Sin Stock')
+}else{
+   return alert ('Sin stock')
 }
 }
 
 const handleDecrement = () =>{
     if (stockItems > 0 ) {
     setStockItems(stockItems-1)
-} else {
-    return false
+} 
 }
-}
+
 
 return(
     <div className='ItemCount'>
